@@ -8,10 +8,13 @@ namespace EmpresaTransportes
 {
     class LugarViaje
     {
-        public TipoViaje _TipoViaje;
+      
+        public string lugar_viaje { get;set; }
         public LugarViaje(string tipoViaje)
         {
-            tipoViaje = _TipoViaje.Tipoviaje;
+            TipoViaje _TipoViaje = new TipoViaje();
+            tipoViaje = _TipoViaje.tipoviaje;
         }
+        public LugarViaje() { }
     }
 }

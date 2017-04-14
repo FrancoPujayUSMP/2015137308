@@ -8,37 +8,43 @@ namespace EmpresaTransportes
 {
     class Transporte:Servicio
     {
-        public Cliente _Cliente;
-        public TipoViaje _TipoViaje;
-        public LugarViaje _LugarViaje;
-        public Transporte(Cliente _Cliente)
-        {
-            _Cliente = this._Cliente;
-        }
-        public Transporte(TipoViaje _TipoViaje)
-        {
-            _TipoViaje = this._TipoViaje;
-        }
-        public Transporte(LugarViaje _LugarViaje)
-        {
-            _LugarViaje = this._LugarViaje;
-        }
+
+        
+
         public override void servicio()
         {
 
-            string tipoviaje;
+            Cliente _Cliente = new Cliente();
+            TipoViaje _TipoViaje = new TipoViaje();
+            LugarViaje _LugarViaje = new LugarViaje();
             Console.WriteLine("Transporte");
             Console.WriteLine("------------------------------------------------------------------------------");
-            
-            for(int i=0;i<3;i++)
+
+            for (int i = 0; i < 3; i++)
             {
-                switch (i) { case 0: _TipoViaje = new TipoViaje("VIP"); break; case 1: _TipoViaje = new TipoViaje("Normal");break; default: _TipoViaje = new TipoViaje("VIP");break; }
-                tipoviaje = _TipoViaje.Tipoviaje;
-                Console.WriteLine("Armando Torres 01856212 Tipo de Viaje: " + tipoviaje + " Destino: Ica");
+                switch (i)
+                {
+                    case 0:
+                        _TipoViaje.tipoviaje = ("VIP   ");
+                        _Cliente.nombreCli = "Hernan Torres";
+                        _Cliente.dniCli = "48128374";
+                        _LugarViaje.lugar_viaje = "Ica"; break;
+                    case 1:
+                        _TipoViaje.tipoviaje = "Normal";
+                        _Cliente.nombreCli = "Felipe Dueñas";
+                        _Cliente.dniCli = "20387312";
+                        _LugarViaje.lugar_viaje = "Trujillo"; break;
+                    default:
+                        _TipoViaje.tipoviaje = "VIP   ";
+                        _Cliente.nombreCli = "Isaac Morales";
+                        _Cliente.dniCli = "08745621";
+                        _LugarViaje.lugar_viaje = "Puno"; break;
+                }
+
+                Console.WriteLine("" + _Cliente.nombreCli + " " + _Cliente.dniCli + "  Tipo de Viaje: " + _TipoViaje.tipoviaje + "   Destino:" + _LugarViaje.lugar_viaje);
             }
-            
+
             Console.WriteLine("------------------------------------------------------------------------------");
-            
         }
         public Transporte() { }
     }

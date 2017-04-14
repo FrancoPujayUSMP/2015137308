@@ -11,18 +11,20 @@ namespace EmpresaTransportes
        private string encomiendaID { get; set; }
         public Bus bus { get; set; }
         public enum Encomiendas { Arroz,Papa,Camote,Piña,Cebolla,Limon}
+        private double peso { get; set; }
         Random r = new Random();
-        float peso;
+        
         public Encomienda(string descripcionServicio) : base(descripcionServicio) { }
         public Encomienda(Bus bus)
         {
             bus = this.bus;
         }
-        public Encomienda(string encomiendaID,float peso)
+        public Encomienda(string encomiendaID,double peso)
         {
             encomiendaID = this.encomiendaID;
             peso = this.peso;
         }
+        
         public override void servicio()
         {
             Console.WriteLine("Encomiendas");
@@ -39,7 +41,7 @@ namespace EmpresaTransportes
                 else if (encomienda.Equals("Piña")) peso = 45;
                 else if (encomienda.Equals("Cebolla")) peso = 35;
                 else peso = 15;
-                Console.WriteLine("Encomienda : {0}      Peso: {1}KG", encomienda, peso);
+                Console.WriteLine("Encomienda : {0}      Peso: {1}kg", encomienda, peso);
             }
             Console.WriteLine("------------------------------------------------------------------------------");
             Console.ReadLine();

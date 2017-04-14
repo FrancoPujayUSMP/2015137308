@@ -8,8 +8,13 @@ namespace EmpresaTransportes
 {
     class Cliente
     {
-        private string nombreCli { get; set; }
-        private string dniCli { get; set; }
+        public string nombreCli { get; set; }
+        public string dniCli { get; set; }
+        public Cliente(string nombreCli)
+        {
+            nombreCli = this.nombreCli;
+        }
+        public Cliente() { }
 
     }
 }

@@ -8,17 +8,19 @@ namespace EmpresaTransportes
 {
     class Program
     {
+       
         static void Main(string[] args)
         {
             
-      
-        }
-        public void one()
-        {
-            var Transporte = new Transporte();
+        var Transporte = new Transporte();
             Transporte.servicio();
             var Encomienda = new Encomienda();
             Encomienda.servicio();
+            Console.ReadLine();
+
+
+
         }
+        
     }
 }
