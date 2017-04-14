@@ -4,18 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Empresa_Transporte.Entities
 {
-    class Class1
+    class TipoPago
     {
-
-
-
-        static void Main(string[] args)
+        public string tipoPago { get; set; }
+        public TipoPago(string tipoPago)
         {
-
-            Console.WriteLine("Hola");
+            tipoPago = this.tipoPago;
         }
     }
 }

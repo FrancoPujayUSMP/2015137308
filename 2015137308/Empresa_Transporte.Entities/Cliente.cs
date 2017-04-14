@@ -4,18 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Empresa_Transporte.Entities
 {
-    class Class1
+    class Cliente
     {
+        private string nombreCli { get; set; }
+        private string dniCli { get; set; }
 
-
-
-        static void Main(string[] args)
-        {
-
-            Console.WriteLine("Hola");
-        }
     }
 }
