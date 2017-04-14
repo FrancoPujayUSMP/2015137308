@@ -1,0 +1,5 @@
+C:\Users\Hackerman\Documents\Visual Studio 2015\Projects\2015137308\2015137308\EmpresaTransportes\bin\Debug\EmpresaTransportes.exe.config
+C:\Users\Hackerman\Documents\Visual Studio 2015\Projects\2015137308\2015137308\EmpresaTransportes\bin\Debug\EmpresaTransportes.exe
+C:\Users\Hackerman\Documents\Visual Studio 2015\Projects\2015137308\2015137308\EmpresaTransportes\bin\Debug\EmpresaTransportes.pdb
+C:\Users\Hackerman\Documents\Visual Studio 2015\Projects\2015137308\2015137308\EmpresaTransportes\obj\Debug\EmpresaTransportes.exe
+C:\Users\Hackerman\Documents\Visual Studio 2015\Projects\2015137308\2015137308\EmpresaTransportes\obj\Debug\EmpresaTransportes.pdb
